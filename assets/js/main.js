@@ -14,20 +14,22 @@ $("#calculate").click(function () {
     );
     return;
   } else if (bmi < 30) {
+    $("#err").html("");
     $("#normal").css("background-color", "gray");
     $("#over").css("background-color", "gray");
     $("#under").css("background-color", "green");
 
     arrowMargin = bmi * 1.05;
   } else if (bmi < 90) {
+    $("#err").html("");
     $("#under").css("background-color", "gray");
     $("#over").css("background-color", "gray");
     $("#normal").css("background-color", "green");
 
     if (bmi < 45) arrowMargin = bmi * 0.91;
-    else if (bmi < 60) arrowMargin = bmi * 0.8;
     else arrowMargin = bmi / 1.4;
   } else if (bmi >= 90) {
+    $("#err").html("");
     $("#normal").css("background-color", "gray");
     $("#under").css("background-color", "gray");
     $("#over").css("background-color", "green");
