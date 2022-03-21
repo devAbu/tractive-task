@@ -2,6 +2,9 @@
   padding: 0;
   margin: 0;
 }
+body {
+  height: 100vh;
+}
 .bmi {
   color: blue;
 }
@@ -28,4 +31,22 @@
 }
 #err {
   color: red;
+}
+h1 {
+  text-shadow: 2px 2px 4px #000000;
+  color: #1919ff;
+  margin-bottom: 1.5em;
+}
+h3 {
+  text-shadow: 1px 1px 2px #000000;
+}
+label {
+  margin-bottom: 0.5em;
+}
+input,
+button {
+  box-shadow: 5px 5px 14px -10px #000000;
+}
+.progress-bar {
+  box-shadow: inset 1px 1px 15px 0px #b3b3b3;
 }
